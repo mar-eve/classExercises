@@ -1,0 +1,49 @@
+body {
+	/* background image from https://pixabay.com/en/trees-fog-forest-forrest-mist-1209660/ */
+  	background: url(images/background-body.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+#landing-container {
+	background: url(images/background-content.png);
+    /* Center the text within the page */
+
+	/* Add a 7px white border - box model */
+	border: 7px solid #fff;
+	/* Center the container in the page*/
+	/* Move container away from top of page - box model*/
+
+
+	margin: 100px auto 0;
+	
+	/* Add padding -box model */
+	padding: 100px  10px;
+	box-sizing: border-box;
+	text-align: center;
+	
+}
+
+@media (min-width: 635px) {
+	#landing-container {
+		padding: 100px 30px;
+		width: 70%;
+	}
+}
+.content-title {
+	color: #353e67;
+	font-family: 'Poiret One', cursive;
+	text-transform: uppercase;
+	font-size: 50px;
+	/* Remove the default margins set by browser */
+	margin: 0;
+}
+@media(min-width: 500px){
+	.content-title {
+		font-size: 100px;
+	}
+}
+p {
+	/* Change default margin to be 10px */
+	margin: 10px;
+	font-size: 30px;
+	color: #13442b;
+}

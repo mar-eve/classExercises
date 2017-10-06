@@ -1,0 +1,145 @@
+body {
+	/* background image from https://pixabay.com/en/trees-fog-forest-forrest-mist-1209660/ */
+  	background: url(images/background-body.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+#landing-container {
+	/* Using box model to move from top of page and center */
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+}
+.content-title {
+	margin: 0;
+	/* Using a rounded font to match my rounded corners */
+	font-family: 'Quicksand', sans-serif;
+	font-size: 100px;
+	text-transform: uppercase;
+	color: #353e67;
+}
+img {
+	/* Add a border radius of 5px to the image using 
+	http://css3gen.com/border-radius/ */
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+
+
+	/* add a background shadow to the landing image using 
+	http://css3gen.com/box-shadow/ */
+
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:    2px 2px 4px 0px rgba(0, 0, 0, 0.7);
+	box-shadow:         2px 2px 4px 0px rgba(0, 0, 0, 0.7);
+
+
+
+}
+p {
+	margin: 0;
+}
+a {
+	/* Change the display type of the a tag from inline to inline-block */
+	display: inline-block;
+	padding: 20px;
+	margin: 20px 10px;
+	/* Using a rounded font to match my rounded corners */
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	/* Add a border radius of 5px to the button 
+	http://css3gen.com/border-radius/ */
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+
+	/* This is how you can add a transition so it eases into the hover 
+	color over half a second */
+	transition: ease .5s all;
+}
+a.ghost-button {
+	background: transparent;
+	border: 1px solid #ccc;	
+	/* Add a text shadow to the button text to make it look 3d using 
+	http://css3gen.com/text-shadow/ */
+	text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.91);
+	color: #ccc;
+}
+a.button {
+	/* Change the hover background of this button to a gradient of white to light gray */
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(30deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -webkit-linear-gradient(30deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -o-linear-gradient(30deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -ms-linear-gradient(30deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: linear-gradient(120deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+
+
+
+
+
+	border: 1px solid #000;
+	/* Add a text shadow to the button text to make it look 3d using 
+	http://css3gen.com/text-shadow/ */
+	text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.91);
+	color: #000;
+}
+/* Note: a:hover MUST come after a:link and a:visited in the CSS definition 
+in order to be effective! a:active MUST come after a:hover in the CSS 
+definition in order to be effective! Pseudo-class names are not case-sensitive. 
+If you do not need to include any of these states, or you may include only 
+one or two, but they must be in this order.*/
+
+/* use a:visited{  } for the visited state of a button in which if you have 
+already been to the page, the styling will change */
+a:visited{
+	/* Change the visited background of this button to a gradient of light gray to white */
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(218deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -webkit-linear-gradient(218deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -o-linear-gradient(218deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -ms-linear-gradient(218deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: linear-gradient(308deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+
+
+
+
+
+}
+/* use a:hover{  } for hover state of a button in which your cursor moves over 
+the button and the button changes */
+a:hover{
+	/* Change the hover background of this button to a gradient of dark blue to darker blue */
+
+	background: rgb(40, 88, 123);
+	background: -moz-linear-gradient(43deg, rgb(40, 88, 123) 30%, rgb(125, 146, 194) 70%);
+	background: -webkit-linear-gradient(43deg, rgb(40, 88, 123) 30%, rgb(125, 146, 194) 70%);
+	background: -o-linear-gradient(43deg, rgb(40, 88, 123) 30%, rgb(125, 146, 194) 70%);
+	background: -ms-linear-gradient(43deg, rgb(40, 88, 123) 30%, rgb(125, 146, 194) 70%);
+	background: linear-gradient(133deg, rgb(40, 88, 123) 30%, rgb(125, 146, 194) 70%);
+
+
+
+
+
+	border: 1px solid #fff;
+	/* Add a text shadow to the button text to make it look 3d using 
+	http://css3gen.com/text-shadow/ */
+	text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.91);text-shadow: 1px 1px 6px rgba(150, 150, 150, 0.91);
+	color: #fff
+}
+/* use a:active{  } for active state of a button in which you are presently 
+on the page that a link links to */
+a:active{
+	/* Change the active background of this button to the same as the visited state*/
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(218deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -webkit-linear-gradient(218deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -o-linear-gradient(218deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: -ms-linear-gradient(218deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+	background: linear-gradient(308deg, rgb(255, 255, 255) 30%, rgb(213, 213, 213) 70%);
+}

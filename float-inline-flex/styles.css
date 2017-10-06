@@ -1,0 +1,26 @@
+body {
+	background: #ccc;
+}
+h1 {
+	color: #6e54b7;
+}
+.grid-container {
+	background: #19b1c4;
+	
+	/*display: flex;
+	flex-direction: row-reverse;*/
+}
+.grid-item {
+	background: #deff00;
+	font-size: 70px;
+	width: 200px;
+	height: 200px;
+	border: 3px solid black;
+
+
+}
+/* Begin Contact Page Styles */
+.contact-page h1 {
+	color: #000099;
+}
+/* End Contact Page Styles */
